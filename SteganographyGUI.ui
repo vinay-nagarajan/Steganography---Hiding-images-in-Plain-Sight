@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabOption">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>861</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Embed Payload in Carrier</string>
+     </attribute>
+     <widget class="QGroupBox" name="grpCarrier1">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>10</y>
+        <width>381</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Carrier</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QGraphicsView" name="viewCarrier1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>361</width>
+         <height>281</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkOverride">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>370</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Override Payload</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPayloadFound">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>330</y>
+         <width>331</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>CM Roman</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtCarrierSize">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>410</y>
+         <width>231</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblCarrierSize">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>410</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>CM Roman</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Carrier Size</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="lblArrow">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>180</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>CM Roman</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>==&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpPayload1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>381</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Payload</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QGraphicsView" name="viewPayload1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>361</width>
+         <height>281</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtCompression">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>370</y>
+         <width>31</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QSlider" name="slideCompression">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>363</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>9</number>
+       </property>
+       <property name="pageStep">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="tracking">
+        <bool>true</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="invertedAppearance">
+        <bool>false</bool>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBelow</enum>
+       </property>
+       <property name="tickInterval">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblLevel">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>370</y>
+         <width>35</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkApplyCompression">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>340</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Apply Compression</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPayloadSize">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>410</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>CM Roman</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Payload Size</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPayloadSize">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>410</y>
+         <width>231</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnSave">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>510</y>
+        <width>161</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Embed and Save To ...</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Extract Payload from Carrier</string>
+     </attribute>
+     <widget class="QGroupBox" name="grpPayload2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>10</y>
+        <width>381</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Payload</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QGraphicsView" name="viewPayload2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>361</width>
+         <height>281</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="grpCarrier2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>381</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Carrier</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QGraphicsView" name="viewCarrier2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>361</width>
+         <height>281</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblCarrierEmpty">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>330</y>
+         <width>331</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>CM Roman</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnExtract">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>370</y>
+         <width>281</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Extract Payload</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnClean">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>410</y>
+         <width>281</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Clean Carrier</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="lblArrow2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>170</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>CM Roman</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>==&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>880</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
